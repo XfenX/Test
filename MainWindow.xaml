@@ -1,0 +1,45 @@
+﻿<Window x:Class="testikaaaaaaaaaaaaa.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:testikaaaaaaaaaaaaa"
+		mc:Ignorable="d"
+		Title="MainWindow" Height="450" Width="800">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="60"></RowDefinition>
+			<RowDefinition Height="320"></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid>
+			<StackPanel Orientation="Horizontal">
+				<TextBox x:Name="search" Grid.Row="0" Text="введите для поиска" Height="40" Width="400" FontSize="30" HorizontalAlignment="Left" Margin="10" PreviewMouseLeftButtonDown ="search_PreviewMouseLeftButtonDown"></TextBox>
+				<ComboBox Grid.Row="0" Height="40" Width="180" HorizontalAlignment="Left" SelectedIndex="0" Margin="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+					<ComboBoxItem Content="Нет" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+					<ComboBoxItem Content="Минимальное значение" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+					<ComboBoxItem Content="Минимальное значение" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+					<ComboBoxItem Content="Минимальное значение" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+				</ComboBox>
+				<ComboBox Grid.Row="0" Height="40" Width="150" HorizontalAlignment="Left" SelectedIndex="0"  Margin="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+					<ComboBoxItem Content="Нет" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+					<ComboBoxItem Content="Минимальное значение" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+					<ComboBoxItem Content="Минимальное значение" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+					<ComboBoxItem Content="Минимальное значение" Width="auto" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></ComboBoxItem>
+				</ComboBox>
+			</StackPanel>
+            
+		</Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right" >
+            <Button Margin="5" Width="30" Content="&lt;" BorderThickness="0"/>
+            <Button Margin="5" Width="20" Content="1" BorderThickness="0,0,0,2"/>
+            <Button Margin="5" Width="20" Content="2" BorderThickness="0"/>
+            <Button Margin="5" Width="20" Content="3" BorderThickness="0"/>
+            <Button Margin="5" Width="20" Content="4" BorderThickness="0"/>
+            <Button Margin="5" Width="20" Content="&gt;" BorderThickness="0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Content="Exit" Width="50" Height="30" Margin="10,0,0,4" Click="Button_Click"/>
+        </StackPanel>
+	</Grid>
+</Window>
